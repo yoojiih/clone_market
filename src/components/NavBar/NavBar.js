@@ -13,9 +13,9 @@ import { Navbar,Container,Nav,NavDropdown,Form,Button,FormControl} from 'react-b
 function NavBar() {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
-                <Container fluid>
-                    <Navbar.Brand href="#"><img src={logo} /></Navbar.Brand>
+            <Navbar bg="#ffffff" expand="lg" className="navbar_wrapper">
+                <Container fluid className="nav_container">
+                    <Navbar.Brand href="/" className="logo_image"><img src={logo} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -46,7 +46,7 @@ function NavBar() {
                             Something else here
                         </NavDropdown.Item>
                         </NavDropdown>
-                        <Button variant="outline-success">당근채팅Beta</Button>
+                        <Button variant="outline-secondary" className="chat-button"><span className="button-text">당근채팅</span><span className="button-beta">Beta</span></Button>
                     </Nav>
                     
                     </Navbar.Collapse>
