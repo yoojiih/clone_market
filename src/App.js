@@ -16,9 +16,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+
+      <LandingPage />
       {/* router 4 - 원하는 곳에 <Route><Route/>태그 <Route>안에 path와 path 방문시 보여줄 HTML 작성
           형식 : <Route path="/경로"></Route>*/}
-      <Switch>
+        <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/register" component={RegisterPage} />
@@ -26,7 +28,7 @@ function App() {
           <Route exact path="/life" component={LifePage} />
           <Route exact path="/shop" component={ShopPage} />
           <Route exact path="/direct" component={DirectPage} />
-      </Switch>
+        </Switch>
       <Footer />
     </div>
   );
